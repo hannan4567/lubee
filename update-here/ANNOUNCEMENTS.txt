@@ -1,0 +1,4 @@
+# ANNOUNCEMENTS - one message per line. Shown as a banner on the website.
+# A line starting with # is hidden (like this one). Delete the # to show a line again.
+Oct-26 rate chart is now live. Please check the latest dealer rates and schemes.
+#Example hidden notice: Office closed on Diwali.

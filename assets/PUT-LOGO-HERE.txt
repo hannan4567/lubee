@@ -1,0 +1,1 @@
+Optional: upload your SERVO logo here as logo.png (transparent background, ~300px wide). It appears in the website header automatically.

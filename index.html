@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0b3d91">
+<title>SERVO Dealer Hub - Rates & Schemes</title>
+<meta name="description" content="SERVO lubricants dealer rates, schemes and pack information.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M16 2C16 2 5 14 5 21a11 11 0 0022 0C27 14 16 2 16 2z' fill='%23e31e24'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="stripe"><i></i><i></i><i></i></div>
+<header class="top">
+  <div class="wrap row">
+    <a class="brand" href="./">
+      <img id="logo" src="assets/logo.png" alt="SERVO" onload="this.style.display='block';document.querySelector('.fb').style.display='none'" style="display:none">
+      <span class="fb"><svg viewBox="0 0 32 32" width="32" height="32" aria-hidden="true"><path d="M16 2C16 2 5 14 5 21a11 11 0 0022 0C27 14 16 2 16 2z" fill="#e31e24"/><path d="M11 21a5 5 0 005 5" stroke="#fff" stroke-width="2" fill="none" stroke-linecap="round"/></svg>
+      <span class="wm"><b>SERVO</b><small>Dealer Hub</small></span></span>
+    </a>
+    <span id="badge" class="badge">Loading…</span>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <p class="kicker">Authorised Dealer Portal</p>
+    <h1>Latest SERVO rates &amp; schemes,<br>one search away.</h1>
+    <div class="search">
+      <svg viewBox="0 0 24 24" width="22" height="22"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2"/><path d="M20 20l-4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      <input id="q" type="search" placeholder="Search product, material code or pack size (e.g. 20L)" autocomplete="off" aria-label="Search products">
+    </div>
+    <div id="stats" class="stats"></div>
+  </div>
+</section>
+
+<div id="ann" class="wrap" hidden></div>
+
+<main class="wrap">
+  <div id="chips" class="chips" role="group" aria-label="Segment"></div>
+  <div class="ctrl">
+    <select id="size" aria-label="Pack size"><option value="">All pack sizes</option></select>
+    <select id="sort" aria-label="Sort">
+      <option value="">Sort: Default</option><option value="az">Name A-Z</option>
+      <option value="lo">Rate: low to high</option><option value="hi">Rate: high to low</option>
+    </select>
+    <div class="seg-btn" role="group" aria-label="View">
+      <button id="vCards" title="Card view">▦</button><button id="vTable" title="Table view">☰</button>
+      <button id="prn" title="Print">🖨</button>
+    </div>
+  </div>
+  <p id="meta" class="meta"></p>
+  <div id="out"></div>
+  <button id="more" class="more" hidden>Show more</button>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p><b>Disclaimer:</b> Rates shown are for information only and are subject to change without prior notice. Final billing will be as per the SERVO invoice and prevailing scheme terms. For authorised dealer use only.</p>
+    <p class="fine">SERVO is a brand of Indian Oil Corporation Ltd. This portal is a dealer information tool.</p>
+  </div>
+</footer>
+<noscript><p style="padding:20px">Please enable JavaScript to view rates.</p></noscript>
+<script src="js/app.js"></script>
+</body>
+</html>
